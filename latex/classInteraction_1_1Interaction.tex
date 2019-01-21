@@ -1,0 +1,127 @@
+\hypertarget{classInteraction_1_1Interaction}{\section{\-Interaction.\-Interaction \-Class \-Reference}
+\label{classInteraction_1_1Interaction}\index{\-Interaction.\-Interaction@{\-Interaction.\-Interaction}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classInteraction_1_1Interaction_a1099a887f8e5cfc5d27b4033ddff031c}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classInteraction_1_1Interaction_affb68931025f4b44599d77cffe303c1e}{interact}
+\item 
+def \hyperlink{classInteraction_1_1Interaction_a3ef6b6c3149c03c15c486fc713f8c59e}{introduction}
+\item 
+def \hyperlink{classInteraction_1_1Interaction_a70cdebce55c83b1bca8dfb556b751d51}{catching\-Up}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classInteraction_1_1Interaction_a6d5a03ed925ef62d6b32ffa8302751f8}{def {\bfseries get\-Interaction\-By\-Id}}\label{classInteraction_1_1Interaction_a6d5a03ed925ef62d6b32ffa8302751f8}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInteraction_1_1Interaction_a4ae95a9c2a0388249c5b065815b68f8b}{interactionid}
+\begin{DoxyCompactList}\small\item\em \-The interaction's type. \end{DoxyCompactList}\item 
+\hypertarget{classInteraction_1_1Interaction_a56fd6f0fdefe07f2546b60181e2875b0}{\hyperlink{classInteraction_1_1Interaction_a56fd6f0fdefe07f2546b60181e2875b0}{fconditions}}\label{classInteraction_1_1Interaction_a56fd6f0fdefe07f2546b60181e2875b0}
+
+\begin{DoxyCompactList}\small\item\em \-Boolean function that returns \-True for when the consequences are met and \-False when not. \end{DoxyCompactList}\item 
+\hypertarget{classInteraction_1_1Interaction_aa05197f150e37ab276c2b42572ceb42d}{\hyperlink{classInteraction_1_1Interaction_aa05197f150e37ab276c2b42572ceb42d}{fconsequences}}\label{classInteraction_1_1Interaction_aa05197f150e37ab276c2b42572ceb42d}
+
+\begin{DoxyCompactList}\small\item\em \-Function to be called when the return value of self.\-fconditions is \-True. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classInteraction_1_1Interaction_a912f1f2d276a30d733e2183093b47d0f}{list \hyperlink{classInteraction_1_1Interaction_a912f1f2d276a30d733e2183093b47d0f}{interactions} = \mbox{[}$\,$\mbox{]}}\label{classInteraction_1_1Interaction_a912f1f2d276a30d733e2183093b47d0f}
+
+\begin{DoxyCompactList}\small\item\em \-Static \-List of all interactions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}A class that treats the interaction between players and other GameObjects
+Basically its a set of conditions and one of consequences. When the conditions
+are met, the consequences happen
+\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classInteraction_1_1Interaction_a1099a887f8e5cfc5d27b4033ddff031c}{\index{\-Interaction\-::\-Interaction@{\-Interaction\-::\-Interaction}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!Interaction::Interaction@{\-Interaction\-::\-Interaction}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Interaction.\-Interaction.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{interactionid, }
+\item[{}]{fconditions, }
+\item[{}]{fconsequences}
+\end{DoxyParamCaption}
+)}}\label{classInteraction_1_1Interaction_a1099a887f8e5cfc5d27b4033ddff031c}
+\begin{DoxyVerb}Interaction.__init__(self, interactiontype, fconditions, fconsequeces)
+Initialization function for an Interaction object
+
+interactiontype is the type of the interaction.
+interactiontype MUST be in Interaction.possibletypes.
+
+fconditions is a boolean function that returns True when the interaction occurs
+
+fconsequences is a function that computes the consequences of the interaction
+
+In short, when fconditions returns True, fconsequences is called
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classInteraction_1_1Interaction_a70cdebce55c83b1bca8dfb556b751d51}{\index{\-Interaction\-::\-Interaction@{\-Interaction\-::\-Interaction}!catching\-Up@{catching\-Up}}
+\index{catching\-Up@{catching\-Up}!Interaction::Interaction@{\-Interaction\-::\-Interaction}}
+\subsubsection[{catching\-Up}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Interaction.\-Interaction.\-catching\-Up} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classInteraction_1_1Interaction_a70cdebce55c83b1bca8dfb556b751d51}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a update on the object's state,
+sent to receivers that are already able to identify the object.
+\end{DoxyVerb}
+ \hypertarget{classInteraction_1_1Interaction_affb68931025f4b44599d77cffe303c1e}{\index{\-Interaction\-::\-Interaction@{\-Interaction\-::\-Interaction}!interact@{interact}}
+\index{interact@{interact}!Interaction::Interaction@{\-Interaction\-::\-Interaction}}
+\subsubsection[{interact}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Interaction.\-Interaction.\-interact} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lcond, }
+\item[{}]{lcons}
+\end{DoxyParamCaption}
+)}}\label{classInteraction_1_1Interaction_affb68931025f4b44599d77cffe303c1e}
+\begin{DoxyVerb}Interaction.interact(self, lcond, lcons)
+
+Function that checks if the conditions are meant and, if so, executes the interaction
+
+lcond is a parameter list to be passed to self.fconditions
+lcons is a parameter list to be passed to self.fconsequences
+\end{DoxyVerb}
+ \hypertarget{classInteraction_1_1Interaction_a3ef6b6c3149c03c15c486fc713f8c59e}{\index{\-Interaction\-::\-Interaction@{\-Interaction\-::\-Interaction}!introduction@{introduction}}
+\index{introduction@{introduction}!Interaction::Interaction@{\-Interaction\-::\-Interaction}}
+\subsubsection[{introduction}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Interaction.\-Interaction.\-introduction} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classInteraction_1_1Interaction_a3ef6b6c3149c03c15c486fc713f8c59e}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a first introduction of the object,
+to receivers that are unaware of its existence.
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classInteraction_1_1Interaction_a4ae95a9c2a0388249c5b065815b68f8b}{\index{\-Interaction\-::\-Interaction@{\-Interaction\-::\-Interaction}!interactionid@{interactionid}}
+\index{interactionid@{interactionid}!Interaction::Interaction@{\-Interaction\-::\-Interaction}}
+\subsubsection[{interactionid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Interaction.\-Interaction\-::interactionid}}}\label{classInteraction_1_1Interaction_a4ae95a9c2a0388249c5b065815b68f8b}
+
+
+\-The interaction's type. 
+
+\-One of the possible types in \-Interaction.\-possibletypes 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Interaction.\-py\end{DoxyCompactItemize}

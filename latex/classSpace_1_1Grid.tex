@@ -1,0 +1,122 @@
+\hypertarget{classSpace_1_1Grid}{\section{\-Space.\-Grid \-Class \-Reference}
+\label{classSpace_1_1Grid}\index{\-Space.\-Grid@{\-Space.\-Grid}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classSpace_1_1Grid_a685e4522685becf245a520a6e669509f}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classSpace_1_1Grid_afd730a4c95125ce048ddebc1105deddb}{get\-Grid\-Position}
+\item 
+def \hyperlink{classSpace_1_1Grid_a5bd13dd073fa6572ec88e9ed77667a8c}{get\-Cell\-Objects}
+\item 
+def \hyperlink{classSpace_1_1Grid_a4675a685e2e94a8cdb9c6a9ad212b7aa}{introduction}
+\item 
+def \hyperlink{classSpace_1_1Grid_ae401c7c3424bb6e53ed54d91b1a5e552}{catching\-Up}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSpace_1_1Grid_a21cc181ea0758628f05da0a50973e0f5}{\hyperlink{classSpace_1_1Grid_a21cc181ea0758628f05da0a50973e0f5}{cellsize}}\label{classSpace_1_1Grid_a21cc181ea0758628f05da0a50973e0f5}
+
+\begin{DoxyCompactList}\small\item\em \-The size of a \hyperlink{classSpace_1_1Cell}{\-Cell}. \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Grid_ae6a363d5382a6fa9cb19546258cac83e}{\hyperlink{classSpace_1_1Grid_ae6a363d5382a6fa9cb19546258cac83e}{xmin}}\label{classSpace_1_1Grid_ae6a363d5382a6fa9cb19546258cac83e}
+
+\begin{DoxyCompactList}\small\item\em \-The lowest x coordinate in the \hyperlink{classSpace_1_1Grid}{\-Grid}. \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Grid_a0f85b5d0632ff606114ae9fe552fdfc3}{\hyperlink{classSpace_1_1Grid_a0f85b5d0632ff606114ae9fe552fdfc3}{xmax}}\label{classSpace_1_1Grid_a0f85b5d0632ff606114ae9fe552fdfc3}
+
+\begin{DoxyCompactList}\small\item\em \-The highest x coordinate in the \hyperlink{classSpace_1_1Grid}{\-Grid}. \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Grid_aed20bb23c12c7ecd5d5a3d376941dcd1}{\hyperlink{classSpace_1_1Grid_aed20bb23c12c7ecd5d5a3d376941dcd1}{ymin}}\label{classSpace_1_1Grid_aed20bb23c12c7ecd5d5a3d376941dcd1}
+
+\begin{DoxyCompactList}\small\item\em \-The lowest y coordinate in the \hyperlink{classSpace_1_1Grid}{\-Grid}. \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Grid_addbdc5dcad4f56619fea0cc860bf3cad}{\hyperlink{classSpace_1_1Grid_addbdc5dcad4f56619fea0cc860bf3cad}{ymax}}\label{classSpace_1_1Grid_addbdc5dcad4f56619fea0cc860bf3cad}
+
+\begin{DoxyCompactList}\small\item\em \-The highest y coordinate in the \hyperlink{classSpace_1_1Grid}{\-Grid}. \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Grid_a9fa1fdf5b96a171e5420ca923e569d99}{\hyperlink{classSpace_1_1Grid_a9fa1fdf5b96a171e5420ca923e569d99}{g}}\label{classSpace_1_1Grid_a9fa1fdf5b96a171e5420ca923e569d99}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSpace_1_1Grid}{\-Grid}'s \hyperlink{classSpace_1_1Cell}{\-Cell} matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}Class that divides a GameSpace object's floor plane in a grid\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classSpace_1_1Grid_a685e4522685becf245a520a6e669509f}{\index{\-Space\-::\-Grid@{\-Space\-::\-Grid}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!Space::Grid@{\-Space\-::\-Grid}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Grid.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{xmin, }
+\item[{}]{xmax, }
+\item[{}]{ymin, }
+\item[{}]{ymax, }
+\item[{}]{cellsize}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Grid_a685e4522685becf245a520a6e669509f}
+\begin{DoxyVerb}Grid.___init(xmin, xmax, ymin, ymax, cellsize)
+Initialization Function for a Grid object
+
+xmin is the lowest x coordinate
+xmax is the highest x coordinate
+
+ymin is the lowest y coordinate
+ymax is the highest y coordinate
+
+cellsize is the size of each cell
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classSpace_1_1Grid_ae401c7c3424bb6e53ed54d91b1a5e552}{\index{\-Space\-::\-Grid@{\-Space\-::\-Grid}!catching\-Up@{catching\-Up}}
+\index{catching\-Up@{catching\-Up}!Space::Grid@{\-Space\-::\-Grid}}
+\subsubsection[{catching\-Up}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Grid.\-catching\-Up} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Grid_ae401c7c3424bb6e53ed54d91b1a5e552}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a update on the object's state,
+sent to receivers that are already able to identify the object.
+\end{DoxyVerb}
+ \hypertarget{classSpace_1_1Grid_a5bd13dd073fa6572ec88e9ed77667a8c}{\index{\-Space\-::\-Grid@{\-Space\-::\-Grid}!get\-Cell\-Objects@{get\-Cell\-Objects}}
+\index{get\-Cell\-Objects@{get\-Cell\-Objects}!Space::Grid@{\-Space\-::\-Grid}}
+\subsubsection[{get\-Cell\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Grid.\-get\-Cell\-Objects} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Grid_a5bd13dd073fa6572ec88e9ed77667a8c}
+\begin{DoxyVerb}Grid.getCellObjects(x, y)
+return the list of GameObjects in the x,y cell
+\end{DoxyVerb}
+ \hypertarget{classSpace_1_1Grid_afd730a4c95125ce048ddebc1105deddb}{\index{\-Space\-::\-Grid@{\-Space\-::\-Grid}!get\-Grid\-Position@{get\-Grid\-Position}}
+\index{get\-Grid\-Position@{get\-Grid\-Position}!Space::Grid@{\-Space\-::\-Grid}}
+\subsubsection[{get\-Grid\-Position}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Grid.\-get\-Grid\-Position} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Grid_afd730a4c95125ce048ddebc1105deddb}
+\begin{DoxyVerb}Grid.getGridPosition(pos)
+cell coordinates of a given 3d or 2d position pos
+\end{DoxyVerb}
+ \hypertarget{classSpace_1_1Grid_a4675a685e2e94a8cdb9c6a9ad212b7aa}{\index{\-Space\-::\-Grid@{\-Space\-::\-Grid}!introduction@{introduction}}
+\index{introduction@{introduction}!Space::Grid@{\-Space\-::\-Grid}}
+\subsubsection[{introduction}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Grid.\-introduction} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Grid_a4675a685e2e94a8cdb9c6a9ad212b7aa}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a first introduction of the object,
+to receivers that are unaware of its existence.
+\end{DoxyVerb}
+ 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Space.\-py\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\hypertarget{classPiece_1_1Piece}{\section{\-Piece.\-Piece \-Class \-Reference}
+\label{classPiece_1_1Piece}\index{\-Piece.\-Piece@{\-Piece.\-Piece}}
+}
+\-Inheritance diagram for \-Piece.\-Piece\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPiece_1_1Piece}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classPiece_1_1Piece_a22f15876ed166ab649eee1988ce7de2a}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+\hypertarget{classPiece_1_1Piece_a0215ddeb7f7c9073fcb6c37a53a06c75}{def {\bfseries promotion}}\label{classPiece_1_1Piece_a0215ddeb7f7c9073fcb6c37a53a06c75}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPiece_1_1Piece_a9a0dd4f786e56223aebeb960b1928e23}{\hyperlink{classPiece_1_1Piece_a9a0dd4f786e56223aebeb960b1928e23}{tags}}\label{classPiece_1_1Piece_a9a0dd4f786e56223aebeb960b1928e23}
+
+\begin{DoxyCompactList}\small\item\em \-A list of tags (a subset of \hyperlink{classGameObject_1_1GameObject_a437572cf73cf761ce7c4e38472bd7015}{\-Game\-Object.\-tagdomain}) \end{DoxyCompactList}\item 
+\hyperlink{classPiece_1_1Piece_ad2df134c76a4d099d2644bdaaac6473a}{interactiondomain}
+\begin{DoxyCompactList}\small\item\em \-A list of possible interaction types (\-Intreraction,interactiontype) for the \hyperlink{namespaceGameObject}{\-Game\-Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPiece_1_1Piece_ae1e3fcdcc616a3c8bc4e0b0371592684}{{\bfseries pieces} = \hyperlink{classGameObject_1_1GameObject_a819a11bfab91c2695bfc7f03d7f98fe8}{\-Game\-Object.\-gameobjects}}\label{classPiece_1_1Piece_ae1e3fcdcc616a3c8bc4e0b0371592684}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classPiece_1_1Piece_a22f15876ed166ab649eee1988ce7de2a}{\index{\-Piece\-::\-Piece@{\-Piece\-::\-Piece}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!Piece::Piece@{\-Piece\-::\-Piece}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Piece.\-Piece.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{objid, }
+\item[{}]{position, }
+\item[{}]{space, }
+\item[{}]{rotation, }
+\item[{}]{scale, }
+\item[{}]{lookat, }
+\item[{}]{tags, }
+\item[{}]{visibility, }
+\item[{}]{interactability, }
+\item[{}]{interactiondomain, }
+\item[{}]{isrigid = {\ttfamily \-False}, }
+\item[{}]{parent = {\ttfamily \-None}, }
+\item[{}]{layer = {\ttfamily \-None}, }
+\item[{}]{interactiontimelimit = {\ttfamily 0}, }
+\item[{}]{script = {\ttfamily \-None}, }
+\item[{}]{team = {\ttfamily \-None}, }
+\item[{}]{latency = {\ttfamily 0}, }
+\item[{}]{score = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classPiece_1_1Piece_a22f15876ed166ab649eee1988ce7de2a}
+\begin{DoxyVerb}GameObject.__init__(self,
+      objid,
+      parent,
+      layer,
+      tags,
+      visibility,
+      interactability,
+      position,
+      space,
+      rotation,
+      scale,
+      lookat,
+      isrigid,
+      interactiondomain,
+      fprocessinteraction,
+      interactiontimelimit,
+      script,
+      team = None,
+      latency  = 0,
+      score = 0
+     )
+   Initialization function for a GameObject.
+   
+   objid is the identification number
+   
+   position is a 3d vector indicating the object's position
+   
+   space is a GameSpace object to which the GameObject's spatial information refers
+      
+   rotation is a 3d vector indicating the object's rotation
+   
+   scale is a 3d vector indicating the object's scale relative to its
+   original size
+   
+   lookat is a 3d vector indicating the direction
+   to which the object is looking
+   
+   isrigid is a boolean to prevent objects from going through each other
+   
+   parent is a parent GameObject to be used in the scene graph
+   at the studio. position, rotation and scale will be relative to parent.
+   
+   layer is the game layer to which the object belongs
+   
+   tags are a subset of GameObject.tagdomain
+   
+   visibility is a list intended to contain everyone who can see the object
+   
+   interactability is a list intended to contain everyone
+   who can interact with the object
+   
+   interactiondomain is a list of possible interactions for the object.
+   
+   interactiontimelimit is the time limit a player has to interact with
+   the object at each turn
+   
+   script is a Script Object who will dictate the object's
+   behavior at each turn
+   
+   team is a Team object that indicates to which team the object belongs
+
+   latency is the number of turns the object will be inactive.
+   -1 is indefinitely
+   
+   score is the GameObject's score in the game.
+   
+\end{DoxyVerb}
+ 
+
+\-Reimplemented from \hyperlink{classGameObject_1_1GameObject_a388f494ea5093578fa2a386b20eb9f4a}{\-Game\-Object.\-Game\-Object}.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classPiece_1_1Piece_ad2df134c76a4d099d2644bdaaac6473a}{\index{\-Piece\-::\-Piece@{\-Piece\-::\-Piece}!interactiondomain@{interactiondomain}}
+\index{interactiondomain@{interactiondomain}!Piece::Piece@{\-Piece\-::\-Piece}}
+\subsubsection[{interactiondomain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Piece.\-Piece\-::interactiondomain}}}\label{classPiece_1_1Piece_ad2df134c76a4d099d2644bdaaac6473a}
+
+
+\-A list of possible interaction types (\-Intreraction,interactiontype) for the \hyperlink{namespaceGameObject}{\-Game\-Object}. 
+
+
+
+\-Reimplemented from \hyperlink{classGameObject_1_1GameObject_a71b47fa67df2f55aa68c09fbfb4c2864}{\-Game\-Object.\-Game\-Object}.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Piece.\-py\end{DoxyCompactItemize}

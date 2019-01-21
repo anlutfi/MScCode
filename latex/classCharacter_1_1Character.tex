@@ -1,0 +1,131 @@
+\hypertarget{classCharacter_1_1Character}{\section{\-Character.\-Character \-Class \-Reference}
+\label{classCharacter_1_1Character}\index{\-Character.\-Character@{\-Character.\-Character}}
+}
+\-Inheritance diagram for \-Character.\-Character\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCharacter_1_1Character}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classCharacter_1_1Character_aaeea994d98f7e7d51dccdfdcb06dbd73}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classCharacter_1_1Character_a30b2039d08a858e628f1801260fa5542}{introduction}
+\item 
+def \hyperlink{classCharacter_1_1Character_a0c749b4e77403ff141f30bc9dc22521b}{catching\-Up}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCharacter_1_1Character_ac7d72676b39b540d595e2dd1e24a81a3}{\hyperlink{classCharacter_1_1Character_ac7d72676b39b540d595e2dd1e24a81a3}{velocity}}\label{classCharacter_1_1Character_ac7d72676b39b540d595e2dd1e24a81a3}
+
+\begin{DoxyCompactList}\small\item\em \-A 3\-D vector for the \hyperlink{classCharacter_1_1Character}{\-Character}'s velocity. \end{DoxyCompactList}\item 
+\hypertarget{classCharacter_1_1Character_afe735ef35ec0f469fea8276d83780bf6}{\hyperlink{classCharacter_1_1Character_afe735ef35ec0f469fea8276d83780bf6}{acceleration}}\label{classCharacter_1_1Character_afe735ef35ec0f469fea8276d83780bf6}
+
+\begin{DoxyCompactList}\small\item\em \-A 3\-D vector for the \hyperlink{classCharacter_1_1Character}{\-Character}'s acceleration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}A GameObject that can move in space and have a behaviour. player or NPC\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classCharacter_1_1Character_aaeea994d98f7e7d51dccdfdcb06dbd73}{\index{\-Character\-::\-Character@{\-Character\-::\-Character}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!Character::Character@{\-Character\-::\-Character}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Character.\-Character.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{objid, }
+\item[{}]{position, }
+\item[{}]{gridposition, }
+\item[{}]{rotation, }
+\item[{}]{scale, }
+\item[{}]{lookat, }
+\item[{}]{tags, }
+\item[{}]{visibility, }
+\item[{}]{interactability, }
+\item[{}]{interactiondomain, }
+\item[{}]{v0, }
+\item[{}]{a0, }
+\item[{}]{isrigid = {\ttfamily \-False}, }
+\item[{}]{parent = {\ttfamily \-None}, }
+\item[{}]{layer = {\ttfamily \-None}, }
+\item[{}]{interactiontimelimit = {\ttfamily 0}, }
+\item[{}]{script = {\ttfamily \-None}, }
+\item[{}]{team = {\ttfamily \-None}, }
+\item[{}]{latency = {\ttfamily 0}, }
+\item[{}]{score = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCharacter_1_1Character_aaeea994d98f7e7d51dccdfdcb06dbd73}
+\begin{DoxyVerb}Character.__init__(self,
+ objid,
+ position,
+ gridposition,
+ rotation,
+ scale,
+ lookat,
+ tags,
+ visibility,
+ interactability,
+ interactiondomain,
+ 
+ v0,
+ a0,
+                  
+ isrigid = False,
+ parent = None,
+ layer = None,
+ interactiontimelimit = 0,
+ script = None,
+ team = None,
+ latency  = 0,
+ score = 0
+)
+Initialization function for a Character. All arguments except v0 and a0
+are documented on GameObject class
+
+v0 is a 3D vector of the object's initial velocity
+a0 is a 3D vector of the object's initial acceleration
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classCharacter_1_1Character_a0c749b4e77403ff141f30bc9dc22521b}{\index{\-Character\-::\-Character@{\-Character\-::\-Character}!catching\-Up@{catching\-Up}}
+\index{catching\-Up@{catching\-Up}!Character::Character@{\-Character\-::\-Character}}
+\subsubsection[{catching\-Up}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Character.\-Character.\-catching\-Up} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classCharacter_1_1Character_a0c749b4e77403ff141f30bc9dc22521b}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a update on the object's state,
+sent to receivers that are already able to identify the object.
+\end{DoxyVerb}
+ 
+
+\-Reimplemented from \hyperlink{classGameObject_1_1GameObject_a86432a4b5f554dc490504b7ca01e2cb9}{\-Game\-Object.\-Game\-Object}.
+
+\hypertarget{classCharacter_1_1Character_a30b2039d08a858e628f1801260fa5542}{\index{\-Character\-::\-Character@{\-Character\-::\-Character}!introduction@{introduction}}
+\index{introduction@{introduction}!Character::Character@{\-Character\-::\-Character}}
+\subsubsection[{introduction}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Character.\-Character.\-introduction} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classCharacter_1_1Character_a30b2039d08a858e628f1801260fa5542}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a first introduction of the object,
+to receivers that are unaware of its existence.
+\end{DoxyVerb}
+ 
+
+\-Reimplemented from \hyperlink{classGameObject_1_1GameObject_a10826507bf158f9678071a3eddcee0e9}{\-Game\-Object.\-Game\-Object}.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Character.\-py\end{DoxyCompactItemize}

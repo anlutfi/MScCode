@@ -1,0 +1,167 @@
+\hypertarget{classGame_1_1Poll}{\section{\-Game.\-Poll \-Class \-Reference}
+\label{classGame_1_1Poll}\index{\-Game.\-Poll@{\-Game.\-Poll}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classGame_1_1Poll_afd96f4b0f4e4803b3da6f6494260d41c}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classGame_1_1Poll_a3903be442b757965fe2a7ca00fc5aab7}{compute\-Vote}
+\item 
+def \hyperlink{classGame_1_1Poll_a4a6669f245973c3ef9565536ac055b97}{get\-Rank}
+\item 
+def \hyperlink{classGame_1_1Poll_a9667b4caa7ba397619c2bd2c4e7335e5}{get\-Winner}
+\item 
+def \hyperlink{classGame_1_1Poll_aff874d58fa1ee3c910abd1db950eebdd}{new\-Turn}
+\item 
+def \hyperlink{classGame_1_1Poll_a4d48a1823d18cba288b31ac2140cd0b3}{formattedstr}
+\item 
+def \hyperlink{classGame_1_1Poll_a932dcfa2b6ff73fb8f85b80ba146c004}{introduction}
+\item 
+def \hyperlink{classGame_1_1Poll_aabcf28c68c480a68fdd541907049481b}{catching\-Up}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGame_1_1Poll_ab2a518ed49b8954328633a6688f92eba}{\hyperlink{classGame_1_1Poll_ab2a518ed49b8954328633a6688f92eba}{question}}\label{classGame_1_1Poll_ab2a518ed49b8954328633a6688f92eba}
+
+\begin{DoxyCompactList}\small\item\em \-The question for which the \hyperlink{classGame_1_1Poll}{\-Poll} is computing votes. \end{DoxyCompactList}\item 
+\hypertarget{classGame_1_1Poll_a0ee0be48aad1272d32183d5a7225d9d9}{\hyperlink{classGame_1_1Poll_a0ee0be48aad1272d32183d5a7225d9d9}{data}}\label{classGame_1_1Poll_a0ee0be48aad1272d32183d5a7225d9d9}
+
+\begin{DoxyCompactList}\small\item\em \-The list of possible answers, each one with a possible object attached and the number of votes received. \end{DoxyCompactList}\item 
+\hypertarget{classGame_1_1Poll_aab48c01def4aaceda096f10c54dc1af4}{\hyperlink{classGame_1_1Poll_aab48c01def4aaceda096f10c54dc1af4}{turns}}\label{classGame_1_1Poll_aab48c01def4aaceda096f10c54dc1af4}
+
+\begin{DoxyCompactList}\small\item\em \-The number of turns left before the \hyperlink{classGame_1_1Poll}{\-Poll} expires. \end{DoxyCompactList}\item 
+\hypertarget{classGame_1_1Poll_ae7e10eae049169a19fe46d49b32549ec}{\hyperlink{classGame_1_1Poll_ae7e10eae049169a19fe46d49b32549ec}{isactive}}\label{classGame_1_1Poll_ae7e10eae049169a19fe46d49b32549ec}
+
+\begin{DoxyCompactList}\small\item\em \-Boolean to indicate if the \hyperlink{classGame_1_1Poll}{\-Poll} is active. \end{DoxyCompactList}\item 
+\hypertarget{classGame_1_1Poll_abdbd477f2415fa8b1549eac2bfb4698c}{\hyperlink{classGame_1_1Poll_abdbd477f2415fa8b1549eac2bfb4698c}{fformat}}\label{classGame_1_1Poll_abdbd477f2415fa8b1549eac2bfb4698c}
+
+\begin{DoxyCompactList}\small\item\em \-Function to format the strings to be displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}A class that represents a poll.
+It has a question, a list of possible answers
+and the means to compute votes to these answers\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classGame_1_1Poll_afd96f4b0f4e4803b3da6f6494260d41c}{\index{\-Game\-::\-Poll@{\-Game\-::\-Poll}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!Game::Poll@{\-Game\-::\-Poll}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game.\-Poll.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{question, }
+\item[{}]{answersobjs, }
+\item[{}]{turns = {\ttfamily \-I\-N\-D\-E\-F}, }
+\item[{}]{isactive = {\ttfamily \-True}, }
+\item[{}]{fformat = {\ttfamily lambda~x\-:~\-None}}
+\end{DoxyParamCaption}
+)}}\label{classGame_1_1Poll_afd96f4b0f4e4803b3da6f6494260d41c}
+\begin{DoxyVerb}Poll.__init__(self, question, answersobjs, turns = INDEF, isactive = True,
+ fformat = lambda x: None
+)
+
+Initialization function
+
+question is the question to be asked to the participants of the poll
+
+answersobjs is a list of tuples (answer, obj).
+Each answer can have an attached reference to any object.
+
+turns is the number of turns for which the poll will remain active.
+-1 is indefinite
+
+isActive indicates whether of not the Poll is active
+
+fformat if a function to format the answers and has a single argument,
+the poll object itself and returns a list of formatted strings
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classGame_1_1Poll_aabcf28c68c480a68fdd541907049481b}{\index{\-Game\-::\-Poll@{\-Game\-::\-Poll}!catching\-Up@{catching\-Up}}
+\index{catching\-Up@{catching\-Up}!Game::Poll@{\-Game\-::\-Poll}}
+\subsubsection[{catching\-Up}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game.\-Poll.\-catching\-Up} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classGame_1_1Poll_aabcf28c68c480a68fdd541907049481b}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a update on the object's state,
+sent to receivers that are already able to identify the object.
+\end{DoxyVerb}
+ \hypertarget{classGame_1_1Poll_a3903be442b757965fe2a7ca00fc5aab7}{\index{\-Game\-::\-Poll@{\-Game\-::\-Poll}!compute\-Vote@{compute\-Vote}}
+\index{compute\-Vote@{compute\-Vote}!Game::Poll@{\-Game\-::\-Poll}}
+\subsubsection[{compute\-Vote}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game.\-Poll.\-compute\-Vote} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{answer, }
+\item[{}]{votes = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classGame_1_1Poll_a3903be442b757965fe2a7ca00fc5aab7}
+\begin{DoxyVerb}Poll.computeVote(self, answer, votes = 1)
+Computes votes to one of the Polls answers
+the answer can be either a string or the index in self.data
+\end{DoxyVerb}
+ \hypertarget{classGame_1_1Poll_a4d48a1823d18cba288b31ac2140cd0b3}{\index{\-Game\-::\-Poll@{\-Game\-::\-Poll}!formattedstr@{formattedstr}}
+\index{formattedstr@{formattedstr}!Game::Poll@{\-Game\-::\-Poll}}
+\subsubsection[{formattedstr}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game.\-Poll.\-formattedstr} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classGame_1_1Poll_a4d48a1823d18cba288b31ac2140cd0b3}
+\begin{DoxyVerb}Poll.formattedstr(self)
+Returns a list of the Poll's formatted strings.
+The first one being the question and the others the answers, in order
+\end{DoxyVerb}
+ \hypertarget{classGame_1_1Poll_a4a6669f245973c3ef9565536ac055b97}{\index{\-Game\-::\-Poll@{\-Game\-::\-Poll}!get\-Rank@{get\-Rank}}
+\index{get\-Rank@{get\-Rank}!Game::Poll@{\-Game\-::\-Poll}}
+\subsubsection[{get\-Rank}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game.\-Poll.\-get\-Rank} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classGame_1_1Poll_a4a6669f245973c3ef9565536ac055b97}
+\begin{DoxyVerb}Poll.getRank(self)
+Returns the Poll's results ordered by most voted answers
+\end{DoxyVerb}
+ \hypertarget{classGame_1_1Poll_a9667b4caa7ba397619c2bd2c4e7335e5}{\index{\-Game\-::\-Poll@{\-Game\-::\-Poll}!get\-Winner@{get\-Winner}}
+\index{get\-Winner@{get\-Winner}!Game::Poll@{\-Game\-::\-Poll}}
+\subsubsection[{get\-Winner}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game.\-Poll.\-get\-Winner} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classGame_1_1Poll_a9667b4caa7ba397619c2bd2c4e7335e5}
+\begin{DoxyVerb}Poll.getWinner(self)
+Returns the Poll's winning answer
+\end{DoxyVerb}
+ \hypertarget{classGame_1_1Poll_a932dcfa2b6ff73fb8f85b80ba146c004}{\index{\-Game\-::\-Poll@{\-Game\-::\-Poll}!introduction@{introduction}}
+\index{introduction@{introduction}!Game::Poll@{\-Game\-::\-Poll}}
+\subsubsection[{introduction}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game.\-Poll.\-introduction} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classGame_1_1Poll_a932dcfa2b6ff73fb8f85b80ba146c004}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a first introduction of the object,
+to receivers that are unaware of its existence.
+\end{DoxyVerb}
+ \hypertarget{classGame_1_1Poll_aff874d58fa1ee3c910abd1db950eebdd}{\index{\-Game\-::\-Poll@{\-Game\-::\-Poll}!new\-Turn@{new\-Turn}}
+\index{new\-Turn@{new\-Turn}!Game::Poll@{\-Game\-::\-Poll}}
+\subsubsection[{new\-Turn}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game.\-Poll.\-new\-Turn} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{turnnumber = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classGame_1_1Poll_aff874d58fa1ee3c910abd1db950eebdd}
+\begin{DoxyVerb}Poll.newTurn(self, turnnumber = 1)
+Function to compute a new turn
+\end{DoxyVerb}
+ 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Game.\-py\end{DoxyCompactItemize}

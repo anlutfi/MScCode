@@ -1,0 +1,139 @@
+\hypertarget{classSpace_1_1Cell}{\section{\-Space.\-Cell \-Class \-Reference}
+\label{classSpace_1_1Cell}\index{\-Space.\-Cell@{\-Space.\-Cell}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classSpace_1_1Cell_a924291fc11b25771ca67349d046eced5}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classSpace_1_1Cell_a4ca073a5587452ac2efc91a5281e7e55}{center}
+\item 
+def \hyperlink{classSpace_1_1Cell_a0e044b5a744e0e7756fb9be0f7a0d1ff}{add\-Object}
+\item 
+def \hyperlink{classSpace_1_1Cell_ae42d3c27c10761a26288b2a3e4127873}{remove\-Object}
+\item 
+def \hyperlink{classSpace_1_1Cell_a4ce4dbf71e809f6f0e73a45adf3d8fac}{get\-Objects}
+\item 
+def \hyperlink{classSpace_1_1Cell_a2f4efef93b8307f4c0856ebd99171155}{introduction}
+\item 
+def \hyperlink{classSpace_1_1Cell_aaf19831256434c36cc7408936db65bfe}{catching\-Up}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSpace_1_1Cell_a69795f2c1ed435d84d64b209be46a30e}{\hyperlink{classSpace_1_1Cell_a69795f2c1ed435d84d64b209be46a30e}{xb}}\label{classSpace_1_1Cell_a69795f2c1ed435d84d64b209be46a30e}
+
+\begin{DoxyCompactList}\small\item\em x begin, lowest x coordinate that is in the cell \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Cell_a1bfa638e3faed349d2d88438d8c57452}{\hyperlink{classSpace_1_1Cell_a1bfa638e3faed349d2d88438d8c57452}{xe}}\label{classSpace_1_1Cell_a1bfa638e3faed349d2d88438d8c57452}
+
+\begin{DoxyCompactList}\small\item\em x end, highest x coordinate that is in the cell \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Cell_aacd06f2c6f6e331d4ec03f93e62fa6d6}{\hyperlink{classSpace_1_1Cell_aacd06f2c6f6e331d4ec03f93e62fa6d6}{yb}}\label{classSpace_1_1Cell_aacd06f2c6f6e331d4ec03f93e62fa6d6}
+
+\begin{DoxyCompactList}\small\item\em y begin, lowest y coordinate that is in the cell \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Cell_a67848a0ad69098bdb539b063de16bab9}{\hyperlink{classSpace_1_1Cell_a67848a0ad69098bdb539b063de16bab9}{ye}}\label{classSpace_1_1Cell_a67848a0ad69098bdb539b063de16bab9}
+
+\begin{DoxyCompactList}\small\item\em y end, highest y coordinate that is in the cell \end{DoxyCompactList}\item 
+\hypertarget{classSpace_1_1Cell_a38b3f9f8f3c04995fb5f3c48e15229ba}{\hyperlink{classSpace_1_1Cell_a38b3f9f8f3c04995fb5f3c48e15229ba}{gameobjects}}\label{classSpace_1_1Cell_a38b3f9f8f3c04995fb5f3c48e15229ba}
+
+\begin{DoxyCompactList}\small\item\em \-List of \-Game\-Objects (\hyperlink{namespaceGameObject}{\-Game\-Object}) currently in the \hyperlink{classSpace_1_1Cell}{\-Cell}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}a Grid object's cell\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classSpace_1_1Cell_a924291fc11b25771ca67349d046eced5}{\index{\-Space\-::\-Cell@{\-Space\-::\-Cell}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!Space::Cell@{\-Space\-::\-Cell}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Cell.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{xb, }
+\item[{}]{xe, }
+\item[{}]{yb, }
+\item[{}]{ye}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Cell_a924291fc11b25771ca67349d046eced5}
+\begin{DoxyVerb}Cell.__init__(self, xb, xe, yb, ye)
+Initialization function for a Cell Object
+
+xb is xbegin
+xe in xend
+
+same for yb and ye
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classSpace_1_1Cell_a0e044b5a744e0e7756fb9be0f7a0d1ff}{\index{\-Space\-::\-Cell@{\-Space\-::\-Cell}!add\-Object@{add\-Object}}
+\index{add\-Object@{add\-Object}!Space::Cell@{\-Space\-::\-Cell}}
+\subsubsection[{add\-Object}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Cell.\-add\-Object} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Cell_a0e044b5a744e0e7756fb9be0f7a0d1ff}
+\begin{DoxyVerb}Cell.addObject(obj)
+adds a GameObject obj to the cell's gameobjects[].
+Returns True for success and False for failure
+\end{DoxyVerb}
+ \hypertarget{classSpace_1_1Cell_aaf19831256434c36cc7408936db65bfe}{\index{\-Space\-::\-Cell@{\-Space\-::\-Cell}!catching\-Up@{catching\-Up}}
+\index{catching\-Up@{catching\-Up}!Space::Cell@{\-Space\-::\-Cell}}
+\subsubsection[{catching\-Up}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Cell.\-catching\-Up} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Cell_aaf19831256434c36cc7408936db65bfe}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a update on the object's state,
+sent to receivers that are already able to identify the object.
+\end{DoxyVerb}
+ \hypertarget{classSpace_1_1Cell_a4ca073a5587452ac2efc91a5281e7e55}{\index{\-Space\-::\-Cell@{\-Space\-::\-Cell}!center@{center}}
+\index{center@{center}!Space::Cell@{\-Space\-::\-Cell}}
+\subsubsection[{center}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Cell.\-center} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Cell_a4ca073a5587452ac2efc91a5281e7e55}
+\begin{DoxyVerb}Cell.center(self)
+Returns the (X, Y) coordinate of the Cell's center point
+\end{DoxyVerb}
+ \hypertarget{classSpace_1_1Cell_a4ce4dbf71e809f6f0e73a45adf3d8fac}{\index{\-Space\-::\-Cell@{\-Space\-::\-Cell}!get\-Objects@{get\-Objects}}
+\index{get\-Objects@{get\-Objects}!Space::Cell@{\-Space\-::\-Cell}}
+\subsubsection[{get\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Cell.\-get\-Objects} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Cell_a4ce4dbf71e809f6f0e73a45adf3d8fac}
+\begin{DoxyVerb}Cell.getObjects()
+returns a list of game objects located in the Cell
+\end{DoxyVerb}
+ \hypertarget{classSpace_1_1Cell_a2f4efef93b8307f4c0856ebd99171155}{\index{\-Space\-::\-Cell@{\-Space\-::\-Cell}!introduction@{introduction}}
+\index{introduction@{introduction}!Space::Cell@{\-Space\-::\-Cell}}
+\subsubsection[{introduction}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Cell.\-introduction} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Cell_a2f4efef93b8307f4c0856ebd99171155}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a first introduction of the object,
+to receivers that are unaware of its existence.
+\end{DoxyVerb}
+ \hypertarget{classSpace_1_1Cell_ae42d3c27c10761a26288b2a3e4127873}{\index{\-Space\-::\-Cell@{\-Space\-::\-Cell}!remove\-Object@{remove\-Object}}
+\index{remove\-Object@{remove\-Object}!Space::Cell@{\-Space\-::\-Cell}}
+\subsubsection[{remove\-Object}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Space.\-Cell.\-remove\-Object} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classSpace_1_1Cell_ae42d3c27c10761a26288b2a3e4127873}
+\begin{DoxyVerb}Cell.removeObject(obj)
+removes a GameObject obj from the cell's gameobjects[].
+\end{DoxyVerb}
+ 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Space.\-py\end{DoxyCompactItemize}

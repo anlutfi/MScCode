@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['idfromobj',['idFromObj',['../classGameObject_1_1GameObject.html#a114c8b7fd3c2f7450b07b796fc982ea6',1,'GameObject::GameObject']]],
+  ['initialstate',['initialState',['../classGame_1_1Game.html#a9ca82128ce923d5eed173141459d70eb',1,'Game::Game.initialState'],['../classGame_1_1Game.html#a71a6e20de6b0164b8262d44ba73449e6',1,'Game::Game::initialstate()']]],
+  ['inittagdomain',['initTagDomain',['../classGameObject_1_1GameObject.html#abea66e6f349308e235a6f044a1276f4b',1,'GameObject::GameObject']]],
+  ['interact',['interact',['../classInteraction_1_1Interaction.html#affb68931025f4b44599d77cffe303c1e',1,'Interaction::Interaction']]],
+  ['interactability',['interactability',['../classGameObject_1_1GameObject.html#aa48d265929b12d794a9ac630046b74cf',1,'GameObject::GameObject']]],
+  ['interaction',['Interaction',['../namespaceInteraction.html',1,'']]],
+  ['interaction',['Interaction',['../classInteraction_1_1Interaction.html',1,'Interaction']]],
+  ['interactiondomain',['interactiondomain',['../classGameObject_1_1GameObject.html#a71b47fa67df2f55aa68c09fbfb4c2864',1,'GameObject::GameObject']]],
+  ['interactionid',['interactionid',['../classInteraction_1_1Interaction.html#a4ae95a9c2a0388249c5b065815b68f8b',1,'Interaction::Interaction']]],
+  ['interactionq',['interactionQ',['../classGameObject_1_1GameObject.html#aff791d0b641e0cb3c7cdc866fdfbc11b',1,'GameObject::GameObject']]],
+  ['interactions',['interactions',['../classInteraction_1_1Interaction.html#a912f1f2d276a30d733e2183093b47d0f',1,'Interaction::Interaction']]],
+  ['interactiontimelimit',['interactiontimelimit',['../classGameObject_1_1GameObject.html#a87299e77b3076fc07b69580f8a63d2fe',1,'GameObject::GameObject']]],
+  ['introduction',['introduction',['../classCharacter_1_1Character.html#a30b2039d08a858e628f1801260fa5542',1,'Character::Character.introduction()'],['../classCollision_1_1Collision.html#a3d88b2d02247db3b7009b0674e249fee',1,'Collision::Collision.introduction()'],['../classGame_1_1Poll.html#a932dcfa2b6ff73fb8f85b80ba146c004',1,'Game::Poll.introduction()'],['../classGameObject_1_1Layer.html#acf0a86a8b98f5d6e64ba3b2855dccfbf',1,'GameObject::Layer.introduction()'],['../classGameObject_1_1GameObject.html#a10826507bf158f9678071a3eddcee0e9',1,'GameObject::GameObject.introduction()'],['../classInteraction_1_1Interaction.html#a3ef6b6c3149c03c15c486fc713f8c59e',1,'Interaction::Interaction.introduction()'],['../classSpace_1_1Cell.html#a2f4efef93b8307f4c0856ebd99171155',1,'Space::Cell.introduction()'],['../classSpace_1_1Grid.html#a4675a685e2e94a8cdb9c6a9ad212b7aa',1,'Space::Grid.introduction()'],['../classSpace_1_1GameSpace.html#ad7e82ea74fef698b9e719c93f271b1c9',1,'Space::GameSpace.introduction()'],['../classTeam_1_1Team.html#a276c4d4180f64c3cb08b8010880a9b9d',1,'Team::Team.introduction()']]],
+  ['isactive',['isactive',['../classGame_1_1Poll.html#ae7e10eae049169a19fe46d49b32549ec',1,'Game::Poll']]],
+  ['isdiscrete',['isdiscrete',['../classGame_1_1Game.html#ae533135b459d1563769361e0022af7da',1,'Game::Game']]],
+  ['isrigid',['isrigid',['../classGameObject_1_1GameObject.html#a52d00a0bed09a38d18ca301b5204517c',1,'GameObject::GameObject']]]
+];

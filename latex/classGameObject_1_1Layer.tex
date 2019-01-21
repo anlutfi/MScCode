@@ -1,0 +1,128 @@
+\hypertarget{classGameObject_1_1Layer}{\section{\-Game\-Object.\-Layer \-Class \-Reference}
+\label{classGameObject_1_1Layer}\index{\-Game\-Object.\-Layer@{\-Game\-Object.\-Layer}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classGameObject_1_1Layer_a62464efbda1e2a0ac692ba3eb07cb193}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classGameObject_1_1Layer_a958cdf832892dc6e1d3b7d817f7ba241}{add\-Object}
+\item 
+def \hyperlink{classGameObject_1_1Layer_aa936cacaf059a5b8e5e1f59bd63e563e}{remove\-Object}
+\item 
+def \hyperlink{classGameObject_1_1Layer_acf0a86a8b98f5d6e64ba3b2855dccfbf}{introduction}
+\item 
+def \hyperlink{classGameObject_1_1Layer_ab0287a8cfc48f0ce28eb78a918d0c3c3}{catching\-Up}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classGameObject_1_1Layer_ae5bf94d8fa5df6e1c814953dbf0ac92a}{get\-Layer\-By\-Name}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGameObject_1_1Layer_a675b63dabc8dcb983df23e44862cedd8}{\hyperlink{classGameObject_1_1Layer_a675b63dabc8dcb983df23e44862cedd8}{layername}}\label{classGameObject_1_1Layer_a675b63dabc8dcb983df23e44862cedd8}
+
+\begin{DoxyCompactList}\small\item\em \-The \hyperlink{classGameObject_1_1Layer}{\-Layer}'s name. \end{DoxyCompactList}\item 
+\hypertarget{classGameObject_1_1Layer_ad5c77836c30757d0fc62da2726742cb7}{\hyperlink{classGameObject_1_1Layer_ad5c77836c30757d0fc62da2726742cb7}{objects}}\label{classGameObject_1_1Layer_ad5c77836c30757d0fc62da2726742cb7}
+
+\begin{DoxyCompactList}\small\item\em \-A list of the \-Game\-Objects in the \hyperlink{classGameObject_1_1Layer}{\-Layer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGameObject_1_1Layer_a756222cc47fa662d6288b9300afc15b0}{list \hyperlink{classGameObject_1_1Layer_a756222cc47fa662d6288b9300afc15b0}{layers} = \mbox{[}$\,$\mbox{]}}\label{classGameObject_1_1Layer_a756222cc47fa662d6288b9300afc15b0}
+
+\begin{DoxyCompactList}\small\item\em \-The list of \-Layers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}A layer is a set of GameObjects. 
+Grouping objects in layers can save CPU time
+\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classGameObject_1_1Layer_a62464efbda1e2a0ac692ba3eb07cb193}{\index{\-Game\-Object\-::\-Layer@{\-Game\-Object\-::\-Layer}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!GameObject::Layer@{\-Game\-Object\-::\-Layer}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game\-Object.\-Layer.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{layername, }
+\item[{}]{initialobjects}
+\end{DoxyParamCaption}
+)}}\label{classGameObject_1_1Layer_a62464efbda1e2a0ac692ba3eb07cb193}
+\begin{DoxyVerb}Layer.__init__(self, layername, objects)
+Initialization funciton.
+
+layername is the Layer's name
+
+initialobjects is a list of GameObjects that belong to the Layer
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classGameObject_1_1Layer_a958cdf832892dc6e1d3b7d817f7ba241}{\index{\-Game\-Object\-::\-Layer@{\-Game\-Object\-::\-Layer}!add\-Object@{add\-Object}}
+\index{add\-Object@{add\-Object}!GameObject::Layer@{\-Game\-Object\-::\-Layer}}
+\subsubsection[{add\-Object}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game\-Object.\-Layer.\-add\-Object} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classGameObject_1_1Layer_a958cdf832892dc6e1d3b7d817f7ba241}
+\begin{DoxyVerb}Layer.addObject(self, obj)
+A function that adds a GameObject obj to a Layer
+
+Returns True if the object is successfully added and False otherwise
+\end{DoxyVerb}
+ \hypertarget{classGameObject_1_1Layer_ab0287a8cfc48f0ce28eb78a918d0c3c3}{\index{\-Game\-Object\-::\-Layer@{\-Game\-Object\-::\-Layer}!catching\-Up@{catching\-Up}}
+\index{catching\-Up@{catching\-Up}!GameObject::Layer@{\-Game\-Object\-::\-Layer}}
+\subsubsection[{catching\-Up}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game\-Object.\-Layer.\-catching\-Up} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classGameObject_1_1Layer_ab0287a8cfc48f0ce28eb78a918d0c3c3}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a update on the object's state,
+sent to receivers that are already able to identify the object.
+\end{DoxyVerb}
+ \hypertarget{classGameObject_1_1Layer_ae5bf94d8fa5df6e1c814953dbf0ac92a}{\index{\-Game\-Object\-::\-Layer@{\-Game\-Object\-::\-Layer}!get\-Layer\-By\-Name@{get\-Layer\-By\-Name}}
+\index{get\-Layer\-By\-Name@{get\-Layer\-By\-Name}!GameObject::Layer@{\-Game\-Object\-::\-Layer}}
+\subsubsection[{get\-Layer\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game\-Object.\-Layer.\-get\-Layer\-By\-Name} (
+\begin{DoxyParamCaption}
+\item[{}]{layername}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classGameObject_1_1Layer_ae5bf94d8fa5df6e1c814953dbf0ac92a}
+\begin{DoxyVerb}Layer.getLayerByName(layername) [STATIC]
+Returns a Layer object given its name layername.
+Returns None if there's no layer by that name
+\end{DoxyVerb}
+ \hypertarget{classGameObject_1_1Layer_acf0a86a8b98f5d6e64ba3b2855dccfbf}{\index{\-Game\-Object\-::\-Layer@{\-Game\-Object\-::\-Layer}!introduction@{introduction}}
+\index{introduction@{introduction}!GameObject::Layer@{\-Game\-Object\-::\-Layer}}
+\subsubsection[{introduction}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game\-Object.\-Layer.\-introduction} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classGameObject_1_1Layer_acf0a86a8b98f5d6e64ba3b2855dccfbf}
+\begin{DoxyVerb}Generates a JSON friendly dictionary with
+all the object's attributes and values.
+This function is intended as a first introduction of the object,
+to receivers that are unaware of its existence.
+\end{DoxyVerb}
+ \hypertarget{classGameObject_1_1Layer_aa936cacaf059a5b8e5e1f59bd63e563e}{\index{\-Game\-Object\-::\-Layer@{\-Game\-Object\-::\-Layer}!remove\-Object@{remove\-Object}}
+\index{remove\-Object@{remove\-Object}!GameObject::Layer@{\-Game\-Object\-::\-Layer}}
+\subsubsection[{remove\-Object}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf \-Game\-Object.\-Layer.\-remove\-Object} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classGameObject_1_1Layer_aa936cacaf059a5b8e5e1f59bd63e563e}
+\begin{DoxyVerb}Layer.removeObject(self, obj)
+A function that removes a GameObject obj from a Layer
+\end{DoxyVerb}
+ 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Game\-Object.\-py\end{DoxyCompactItemize}
